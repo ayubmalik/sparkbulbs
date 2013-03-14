@@ -59,7 +59,7 @@ var hideBulb = function(player) {
 
 var toggleSidebar = function() {
 	console.log("toggling sidebar");
-	$("#sparkbulb-sidebar").toggle();
+	$("#sparkbulb-sidebar").toggle("slow");
 };
 
 var bindClicks = function() {

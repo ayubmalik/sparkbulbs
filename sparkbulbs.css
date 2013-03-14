@@ -14,12 +14,16 @@ aside ul {
     
 }
 
+#sparkbulb-sidebar {
+    display: none;
+}
+
 #sparkbulb-sidebar li {
     margin-bottom: 10px;
     border-bottom: 2px solid #fff;
 }
 
-#sparkbulb-sidebar li.active {
+#sparkbulb-sidebar li:first-child {
     background-color: #cdcdcd;
 }
 #sparkbulb-sidebar li a {
@@ -29,6 +33,7 @@ aside ul {
 #sparkbulb-sidebar h1 {
     margin: 0;
     font-size: 26.5px;
+    color: #696969;
 }
 
 #sparkbulb-sidebar .item-title {
