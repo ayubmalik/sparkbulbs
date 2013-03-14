@@ -3,7 +3,7 @@ var db = {}; // Only use global var as a hack!
 var getData = function() {
 	$.get('sparkbulbs-data.json', function(data) {
 		db = data;
-		console.log('got data:', db);
+//		console.log('got data:', db);
 	});
 };
 
@@ -77,7 +77,7 @@ var hideBulb = function(player) {
 };
 
 var toggleSidebar = function() {
-	console.log("toggling sidebar");
+//	console.log("toggling sidebar");
 	$("#sparkbulb-sidebar").toggle("slow");
 };
 
@@ -93,7 +93,7 @@ _V_("sparkbulb-player").ready(function() {
 	myPlayer.addEvent("timeupdate", sparkLookup);
 	myPlayer.play();
 	bindClicks();
-	console.log("Spark bulbs ready!");
+//	console.log("Spark bulbs ready!");
         
         $('#sparkbulb-sidebar a.close-button').bind('click', function (e) {
             e.preventDefault();
