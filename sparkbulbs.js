@@ -9,17 +9,32 @@ var getData = function() {
 
 var isIn = function(time, start, end) {
 	if (time >= start && time <= end) {
-//		console.log('found entry at: ', time);
 		return true;
 	}
-
 	return false;
 };
 
+var popKeyword = function(keyword) {
+	var index = 0, matched = false;
+	$.each(db.captions, function (i, item) {
+		if (!matched && item.keyword === keyword) {
+			index = i;
+			matched = true;
+		}
+	});
+	db.captions.splice(index, 1);
+};
 
-var addItemToSidebar  = function(matches, currentItemIndex) {
-	console.log('matches: ', matches, currentItemIndex);
-	var markup = $("#sb-item").html();
+var addItemToSidebar  = function(matches) {
+	var markup = "<li class=\"sidebar-item\"><aside><img src=\"buildassets/Images for sidebar/${sbimage}\" /><h5>${sbtitle}</h5><p>${sbsynopsis}</p></aside></li>";
+	var keyword = matches[0].keyword;
+	var guides = jQuery.grep(db.guides, function(elem, i) {
+		return elem.keyword === keyword;
+	});
+    var data = {sbtitle: guides[0].content[0].title, sbsynopsis: guides[0].content[0].synopsis, sbimage:guides[0].content[0].thumbnail, sburl: guides[0].content[0].url};
+    $.template("sbitem", markup);
+	$.tmpl("sbitem", data).prependTo("#sparkbulb-sidebar ul").fadeIn();
+	popKeyword(keyword);
 };
 
 var sparkLookup = function() {
@@ -31,12 +46,11 @@ var sparkLookup = function() {
 	
 	if (matches.length) {
 		showBulb(player);
-		
-		addItemToSidebar(matches, i);
-		
-	} else {
-		hideBulb(player);
+		addItemToSidebar(matches);
 	}
+//	} else {
+//		hideBulb(player);
+//	}
 };
 
 var showBulb = function() {
@@ -50,6 +64,11 @@ var showBulb = function() {
 	       left:imgLeft,
 	       zIndex:5000
 	     });
+    
+	setTimeout(function(){
+    	$("#eureka").fadeOut();
+    }, 10000);
+    
 	$("#eureka").fadeIn();
 };
 

@@ -8,7 +8,7 @@
         {
             "start": 228,
             "end": 232,
-            " keyword": "mars"
+            "keyword": "mars"
         },
         {
             "start": 568,
@@ -32,8 +32,8 @@
             "content": [
                 {
                     "title": "Science lab on wheels",
-                    "synopis": "What sets Curiosity apart from other Mars Rovers?",
-                    "thumbnail": "Curiosity2.jpg",
+                    "synopsis": "What sets Curiosity apart from other Mars Rovers?",
+                    "thumbnail": "Curiosity3_90.jpg",
                     "url": "http://www.bbc.co.uk/news/science-environment-20094052"
                 }
             ]
@@ -43,14 +43,14 @@
             "content": [
                 {
                     "title": "Mission to Mars",
-                    "synopis": "What dangers would you face on a journey to the Red Planet?",
-                    "thumbnail": "missiontomars.jpg",
+                    "synopsis": "What dangers would you face on a journey to the Red Planet?",
+                    "thumbnail": "missiontomars_90.jpg",
                     "url": "http://www.bbc.co.uk/news/science-environment-20094052"
                 },
                 {
                     "title": "Is there life on Mars?",
-                    "synopis": "Are methane plumes an indication that there's life on the Red Planet?",
-                    "thumbnail": "methaneplumesmars.jpg",
+                    "synopsis": "Are methane plumes an indication that there's life on the Red Planet?",
+                    "thumbnail": "methaneplumesmars_90.jpg",
                     "url": "http://www.bbc.co.uk/news/science-environment-20094052"
                 }
             ]
@@ -60,8 +60,8 @@
             "content": [
                 {
                     "title": "What did Apollo achieve?",
-                    "synopis": "Was the space programme a great achievement or a waste of money?",
-                    "thumbnail": "ApolloAlanBean.jpg",
+                    "synopsis": "Was the space programme a great achievement or a waste of money?",
+                    "thumbnail": "ApolloAlanBean_90.jpg",
                     "url": "http://www.bbc.co.uk/science/space/solarsystem/space_missions/apollo_program#p0069v7z"
                 }
             ]
@@ -71,7 +71,7 @@
             "content": [
                 {
                     "title": "The Eagle has landed",
-                    "synopis": "Why was it so difficult to land Apollo 11 on the Moon?",
+                    "synopsis": "Why was it so difficult to land Apollo 11 on the Moon?",
                     "thumbnail": "Eagleinlunarorbit.jpg",
                     "url": "http://www.bbc.co.uk/science/space/solarsystem/space_missions/apollo_program#p00699f6"
                 }
@@ -82,13 +82,13 @@
             "content": [
                 {
                     "title": "What makes Mars so hostile?",
-                    "synopis": "If life flourishes on Earth, why does the Red Planet seem so lifeless?",
+                    "synopsis": "If life flourishes on Earth, why does the Red Planet seem so lifeless?",
                     "thumbnail": "Mars_Earth_side_by_side.jpg",
                     "url": "http://www.bbc.co.uk/news/science-environment-20094052"
                 },
                 {
                     "title": "Where did our oxygen come from?",
-                    "synopis": "It happened over 3 billion years ago; what made the difference?",
+                    "synopsis": "It happened over 3 billion years ago; what made the difference?",
                     "thumbnail": "oxygen.jpg",
                     "url": "http://www.bbc.co.uk/science/earth/atmosphere_and_climate/atmosphere#p00gczg5"
                 }
