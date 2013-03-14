@@ -1,12 +1,5 @@
 var db = {}; // Only use global var as a hack!
 
-var keywords = [
-                {"start":10, "end": 19, "keyword": "curiosity"}, 
-                {"start":20, "end": 30, "keyword": "curiosity"}, 
-                {"start":45, "end": 50, "keyword": "martian"}, 
-                {"start":60, "end": 70, "keyword": "space"}
-                ];
-
 var getData = function() {
 	$.get('sparkbulbs-data.json', function(data) {
 		db = data;
@@ -23,6 +16,12 @@ var isIn = function(time, start, end) {
 	return false;
 };
 
+
+var addItemToSidebar  = function(matches, currentItemIndex) {
+	console.log('matches: ', matches, currentItemIndex);
+	var markup = $("#sb-item").html();
+};
+
 var sparkLookup = function() {
 	var player = this;
 	var cueTime = player.currentTime().toFixed(2);
@@ -32,6 +31,9 @@ var sparkLookup = function() {
 	
 	if (matches.length) {
 		showBulb(player);
+		
+		addItemToSidebar(matches, i);
+		
 	} else {
 		hideBulb(player);
 	}
