@@ -5,3 +5,42 @@ body {
 aside {
     color: #ccc;
 }
+
+aside h3 {
+    
+}
+
+aside ul {
+    
+}
+
+#sparkbulb-sidebar li {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+#sparkbulb-sidebar li.active {
+    background-color: #cdcdcd;
+}
+#sparkbulb-sidebar li a {
+    padding: 10px;
+}
+
+#sparkbulb-sidebar h1 {
+    margin: 0;
+    font-size: 26.5px;
+}
+
+#sparkbulb-sidebar .item-title {
+    margin: 0;
+    font-size: 18.5px;
+}
+
+#sparkbulb-sidebar .item-description {
+    display: block;
+}
+
+#sparkbulb-sidebar img {
+    float: left;
+    margin-right: 10px;
+}
