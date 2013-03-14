@@ -62,7 +62,7 @@ body {
 
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span10">
+            <div class="span9">
                 <div>
                     <video id="sparkbulb-player" class="video-js vjs-default-skin" controls preload="auto" width="896" height="504" data-setup="{}">
                         <source src="buildassets/bbc_clip1.mp4" type='video/mp4' />
@@ -70,10 +70,11 @@ body {
                     </video>
                 </div>
             </div>
-            <div class="span2" id="sparkbulb-sidebar" style="display:none">
-                <span class="nav-header">Related Guides</span>
+            <div class="span3" id="sparkbulb-sidebar" style="display:none">
+                <h1>BBC SPARK BULBS</h1>
                 <ul class="nav">
                 </ul>
+                <a class="close-button">X</a>
             </div>
         </div>
         <footer>
@@ -102,5 +103,16 @@ body {
     <script src="bootstrap/js/bootstrap-typeahead.js"></script> -->
     <script type="text/javascript" src="jquery/jquery.tmpl.js"></script>
     <script type="text/javascript" src="sparkbulbs.js"></script>
+    
+    <script id="item-template" type="text/x-jQuery-tmpl">
+        <li class="sidebar-item" id="sb-item-0">
+            <a href="#">
+                <img src="buildassets/images/${sbimage}" alt="${sbtitle}">
+                <span class="item-title">${sbtitle}</span>
+                <span class="item-description">${sbsynopsis}</span>
+            </a>
+        </li>
+    </script>
+    
 </body>
 </html>

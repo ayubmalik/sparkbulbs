@@ -26,14 +26,14 @@ var popKeyword = function(keyword) {
 };
 
 var addItemToSidebar  = function(matches) {
-	var markup = "<li class=\"sidebar-item\"><aside><img src=\"buildassets/Images for sidebar/${sbimage}\" /><h5>${sbtitle}</h5><p>${sbsynopsis}</p></aside></li>";
+	var markup = $('#item-template');
 	var keyword = matches[0].keyword;
 	var guides = jQuery.grep(db.guides, function(elem, i) {
 		return elem.keyword === keyword;
 	});
     var data = {sbtitle: guides[0].content[0].title, sbsynopsis: guides[0].content[0].synopsis, sbimage:guides[0].content[0].thumbnail, sburl: guides[0].content[0].url};
     $.template("sbitem", markup);
-	$.tmpl("sbitem", data).prependTo("#sparkbulb-sidebar ul").fadeIn();
+	$.tmpl("sbitem", data).prependTo("#sparkbulb-sidebar ul").fadeIn('slow');
 	popKeyword(keyword);
 };
 
@@ -94,5 +94,9 @@ _V_("sparkbulb-player").ready(function() {
 	myPlayer.play();
 	bindClicks();
 	console.log("Spark bulbs ready!");
+        
+        $('#sparkbulb-sidebar a.close-button').bind('click', function (e) {
+            e.preventDefault();
+            toggleSidebar();
+        });
 });
-

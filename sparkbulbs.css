@@ -2,20 +2,16 @@ body {
     background-color: #222;
 }
 
-aside {
-    color: #ccc;
-}
-
-aside h3 {
-    
-}
-
-aside ul {
-    
+#sparkbulb-sidebar .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 26.5px;
 }
 
 #sparkbulb-sidebar {
     display: none;
+    position: relative;
 }
 
 #sparkbulb-sidebar li {
@@ -26,8 +22,22 @@ aside ul {
 #sparkbulb-sidebar li:first-child {
     background-color: #cdcdcd;
 }
+
 #sparkbulb-sidebar li a {
     padding: 10px;
+}
+
+#sparkbulb-sidebar li:first-child a {
+    color: #0088CC;
+}
+
+#sparkbulb-sidebar li a {
+    color: #fff;
+}
+#sparkbulb-sidebar li a:active,
+#sparkbulb-sidebar li a:hover,
+#sparkbulb-sidebar li a:focus {
+    color: #005580;
 }
 
 #sparkbulb-sidebar h1 {
