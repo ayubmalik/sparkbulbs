@@ -1,65 +1,75 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Spark Bulbs Video Player!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+<meta charset="utf-8">
+<title>Spark Bulbs Video Player!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-        <!-- Le styles -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
+<!-- Le styles -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
 
-            .sidebar-nav {
-                padding: 9px 0;
-            }
+.sidebar-nav {
+    padding: 9px 0;
+}
 
-            @media ( max-width : 980px) { /* Enable use of floated navbar text */
-                .navbar-text.pull-right {
-                    float: none;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                }
-            }
-        </style>
-        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+@media ( max-width : 980px) { /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+</style>
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-              <script src="bootstrap/js/html5shiv.js"></script>
-            <![endif]-->
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
 
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-        <script src="http://vjs.zencdn.net/c/video.js"></script>
-        <link href="sparkbulbs.css" rel="stylesheet">
-    </head>
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/c/video.js"></script>
+<link href="sparkbulbs.css" rel="stylesheet">
+</head>
 
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="#">Spark Bulbs Media Player</a>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">Spark Bulbs Media Player</a>
 
-                </div>
             </div>
         </div>
+    </div>
 
+<<<<<<< HEAD
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span10">
+                <div>
+                    <video id="sparkbulb-player" class="video-js vjs-default-skin" controls preload="auto" width="896" height="504" data-setup="{}">
+                        <source src="buildassets/bbc_clip1.mp4" type='video/mp4' />
+                        <track kind="captions" src="buildassets/bbc_clip1.vtt" srclang="en" label="English" default>
+                    </video>
+=======
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span9">
@@ -88,32 +98,40 @@
                             </a>
                         </li>
                     </ul>
+>>>>>>> c0a5ac59a0baa62b6d0bed6aa75541e7e08c30b7
                 </div>
             </div>
-            <footer>
-                <p>&copy; Spark Bulbs 2013</p>
-            </footer>
-
-            <div id="eureka" style="display:none"><img src="images/bulb.gif" height="55" width="32"/></div>
+            <div class="span2" id="sparkbulb-sidebar" style="display:none">
+                <span class="nav-header">Related Guides</span>
+                <ul class="nav">
+                </ul>
+            </div>
         </div>
-        <!--/.fluid-container-->
-        <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!-- <script src="bootstrap/js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap-transition.js"></script>
-        <script src="bootstrap/js/bootstrap-alert.js"></script>
-        <script src="bootstrap/js/bootstrap-modal.js"></script>
-        <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="bootstrap/js/bootstrap-tab.js"></script>
-        <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="bootstrap/js/bootstrap-popover.js"></script>
-        <script src="bootstrap/js/bootstrap-button.js"></script>
-        <script src="bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="bootstrap/js/bootstrap-typeahead.js"></script> -->
-        <script type="text/javascript" src="jquery/jquery.tmplPlus.min.js"></script>
-        <script type="text/javascript" src="sparkbulbs.js"></script>
-    </body>
+        <footer>
+            <p>&copy; Spark Bulbs 2013</p>
+        </footer>
+
+        <div id="eureka" style="display:none"><img src="images/bulb.gif" height="55" width="32"/></div>
+    </div>
+    <!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script> -->
+    <script type="text/javascript" src="jquery/jquery.tmpl.js"></script>
+    <script type="text/javascript" src="sparkbulbs.js"></script>
+</body>
 </html>
